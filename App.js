@@ -1,19 +1,24 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet,View } from "react-native";
+import Header from "./cc/Header";
+import AlbumList from "./cc/AlbumList";
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>110719037蕭柏睿</Text>
+    <View>
+      <Header />
+      <AlbumList />
     </View>
   );
-}
+};
+
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: "center",
+    alignItems: "center"
+  }
 });
+
+export default App;
